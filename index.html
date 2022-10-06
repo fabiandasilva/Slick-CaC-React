@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>slick</title>
+    <!-- cdn que te pedia la pag para que lo pongas en el head -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
+    <!-- css de las cajas -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+    <!-- jquery tambien estaba desactualizado -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <!-- cdn sacado de npm "creo que la version que estaba en la pag esta desactualizado" -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <!-- son las configuracion del slide -->
+    <script>
+        $('.container').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+            touchMove: true
+        })
+            ;
+    </script>
+</body>
+
+</html>
